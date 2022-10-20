@@ -9,9 +9,18 @@ $.ajax({
 
             //console.log(data[i].status)
 
-            $('#cartoes').append(`   <div class="card-body cartao">
-                                        <h5 class="card-title">${data[i].operador} - (${data[i].nome})</h5>                                                                            
-                                        <span class="${data[i].status} icone-posicao"></span>
+            $('#cartoes').append(`      
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-header">
+                                            ${data[i].operador} - (${data[i].nome})                                                                                    
+                                            <span class="${data[i].status} icone-posicao"></span>
+                                        </div>
+                                        <div class="card-body">
+                                            <blockquote class="blockquote mb-0">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                            </blockquote>
+                                        </div>
                                     </div>`)
         }
         

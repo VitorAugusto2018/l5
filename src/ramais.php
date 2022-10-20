@@ -58,7 +58,11 @@ class Ramais extends Ramal
                     list($tech,$ramal)  = explode('/',$linha[0]);
                     $status_ramais[$ramal] = array('status' => 'pausa');    
                 }
+                $linha = array_reverse(explode(' ', trim($linhas)));   
+                $status_ramais[$ramal]['operador'] = $linha[0];                          
             }
+            
+
         }
         $info_ramais = array();
         foreach($ramais as $linhas){
@@ -71,20 +75,21 @@ class Ramais extends Ramal
                     'nome' => $name,
                     'ramal' => $username,
                     'online' => false,
-                    'status' => $status_ramais[$name]['status']
+                    'status' => $status_ramais[$name]['status'],
+                    'operador' => $status_ramais[$name]['operador']
                 );
             }
             //if(!isset($arr[5])){
             //    echo '<pre>'; print_r($arr); die();
             //}
-            if(isset($arr[5]) && trim($arr[5]) == "OK"){   
-                print_r($linha); die();     
+            if(isset($arr[5]) && trim($arr[5]) == "OK"){                      
                 list($name,$username) = explode('/',$arr[0]);
                 $info_ramais[$name] = array(
                     'nome' => $name,
                     'ramal' => $username,
                     'online' => true,
-                    'status' => $status_ramais[$name]['status']
+                    'status' => $status_ramais[$name]['status'],
+                    'operador' => $status_ramais[$name]['operador']
                 );
             }
         }

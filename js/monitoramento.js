@@ -9,10 +9,10 @@ $.ajax({
 
             //console.log(data[i].status)
 
-            $('#cartoes').append(`<div class="cartao">
-                                <div>${data[i].nome}</div>
-                                <span class="${data[i].status} icone-posicao"></span>
-                            </div>`)
+            $('#cartoes').append(`   <div class="card-body cartao">
+                                        <h5 class="card-title">${data[i].operador} - (${data[i].nome})</h5>                                                                            
+                                        <span class="${data[i].status} icone-posicao"></span>
+                                    </div>`)
         }
         
     },

@@ -26,6 +26,20 @@
     animation: piscar 1s linear infinite;
 }
 
+.indisponivel {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #4d4d4d;
+}
+
+.pausa {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f09309;
+}
+
 @keyframes piscar {
     50% {
         opacity: 0;

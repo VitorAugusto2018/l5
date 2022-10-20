@@ -7,13 +7,7 @@ class ramais {
 
     private $ramais;
     private $filas;
-    private $status_ramais = [];
-
-    private function statusRamais(){
-
-        
-
-    }
+    private $status_ramais = [];  
 
     public function lerFilas(){               
         

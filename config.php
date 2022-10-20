@@ -1,15 +1,15 @@
 <?php
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 /*
  * Método de conexão sem padrões
  */
 class Database
 {
   // configuração do banco de dados
-    private $host   = 'mysql';
+    private $host   = 'localhost';
     private $dbname = 'teste';
     private $username = 'root';
-    private $password = 'root';
+    private $password = '';
 
     // armazena a conexão
     public $conn;

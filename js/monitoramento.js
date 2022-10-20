@@ -1,13 +1,18 @@
+
 $.ajax({
-    url: "/src/ramais.php",  
+    url: "./src/ramais.php",   
     type: "POST",
     dataType: 'json',
     success: function(data){                
-        
-        if(data){
 
-            console.log(data);
+        for(let i in data){
 
+            //console.log(data[i].status)
+
+            $('#cartoes').append(`<div class="cartao">
+                                <div>${data[i].nome}</div>
+                                <span class="${data[i].status} icone-posicao"></span>
+                            </div>`)
         }
         
     },
@@ -15,3 +20,4 @@ $.ajax({
         console.log("Errouu!")
     }
 });
+              

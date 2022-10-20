@@ -11,31 +11,22 @@
     margin: 2px;
 } */
 
-.ocupado {
-    width: 15px;
-    height: 15px;
+.ocupado {    
     border-radius: 50%;
     background-color: #ff0000;
 }
 
 .chamando {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
     background-color: #ff0000;
     animation: piscar 1s linear infinite;
 }
 
-.indisponivel {
-    width: 15px;
-    height: 15px;
+.indisponivel {    
     border-radius: 50%;
     background-color: #4d4d4d;
 }
 
-.pausa {
-    width: 15px;
-    height: 15px;
+.pausa {    
     border-radius: 50%;
     background-color: #f09309;
 }
@@ -46,9 +37,7 @@
     }
 }
 
-.disponivel {
-    width: 15px;
-    height: 15px;
+.disponivel {    
     border-radius: 50%;
     background-color: #04ea04;
 }

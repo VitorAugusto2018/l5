@@ -11,9 +11,8 @@ $.ajax({
 
             $('#cartoes').append(`      
                                     <div class="card" style="width: 18rem;">
-                                        <div class="card-header">
-                                            ${data[i].operador} - (${data[i].nome})                                                                                    
-                                            <span class="${data[i].status} icone-posicao"></span>
+                                        <div class="card-header ${data[i].status}" >
+                                            ${data[i].operador} - (${data[i].nome})                                                                                                                                
                                         </div>
                                         <div class="card-body">
                                             <blockquote class="blockquote mb-0">

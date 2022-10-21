@@ -12,27 +12,28 @@
 } */
 
 .ocupado {        
-    background-color: #ff0000;
-    color: white;
-    border-radius: 50%;
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: white;    
 }
 
 .chamando {
-    background-color: #ff0000;
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
     color: white;
     animation: piscar 1s linear infinite;
 }
 
-.indisponivel {    
-    border-radius: 50%;
+.indisponivel {        
     color: white;
-    background-color: #4d4d4d;
+    background-color: #4d4d4d !important;
+    border-color: #4d4d4d !important;
 }
 
-.pausa {    
-    border-radius: 50%;
+.pausa {        
     color: white;
-    background-color: #f09309;
+    background-color: #f09309 !important;
+    border-color: #f09309 !important;
 }
 
 @keyframes piscar {
@@ -41,9 +42,9 @@
     }
 }
 
-.disponivel {    
-    border-radius: 50%;
+.disponivel {        
     color: white;
+    border-color: #04ea04 !important;
     background-color: #04ea04;
 }
 

@@ -11,23 +11,27 @@
     margin: 2px;
 } */
 
-.ocupado {    
-    border-radius: 50%;
+.ocupado {        
     background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
 }
 
 .chamando {
     background-color: #ff0000;
+    color: white;
     animation: piscar 1s linear infinite;
 }
 
 .indisponivel {    
     border-radius: 50%;
+    color: white;
     background-color: #4d4d4d;
 }
 
 .pausa {    
     border-radius: 50%;
+    color: white;
     background-color: #f09309;
 }
 
@@ -39,6 +43,7 @@
 
 .disponivel {    
     border-radius: 50%;
+    color: white;
     background-color: #04ea04;
 }
 

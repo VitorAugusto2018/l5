@@ -3,9 +3,9 @@ ini_set('display_errors', 0); /// Tem um jeito de ocultar os WANRING, precisamos
 
 require('../config.php');
 
-require('model/ramal_model.php');
+//require('model/ramal_model.php');
 
-class Ramais extends Ramal
+class Ramais
 {          
 
     public function verificar_status() {                
@@ -16,12 +16,6 @@ class Ramais extends Ramal
 
         echo json_encode($ramalresult);
     
-    }
-
-    private function statusRamais(){
-
-        
-
     }
 
     public function lerFilas(){               

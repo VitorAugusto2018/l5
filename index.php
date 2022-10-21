@@ -14,9 +14,8 @@
     <div class="row">
       <h1>Painel de monitoramento de ramal</h1>
     </div>
-    <div class="row">
-      <div id="cartoes">
-      </div>
+    <div id="cartoes" class="row">      
+    </div>
     </div>
   </div>
 
@@ -31,5 +30,19 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/monitoramento.js"></script>
 </body>
+<script>
+  $.ajax({
+    url: "./src/model/ramal_model.php",   
+    type: "POST",
+    dataType: 'json',
+    success: function(data){                
+        
+    },
+    error: function(){
+        console.log("Errouu!")
+    }
+  });
+     
 
+</script>
 </html>

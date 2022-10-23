@@ -1,3 +1,6 @@
+<?php
+require "../App/app.php";
+?>
 <html lang="pt-br">
 
 <head>
@@ -31,18 +34,32 @@
   <script src="js/monitoramento.js"></script>
 </body>
 <script>
+  Monitoramento.list();
+/*
   $.ajax({
-    url: "./src/model/ramal_model.php",   
-    type: "POST",
+    url: "index.php?route=updateDb",   
+    type: "GET",
     dataType: 'json',
     success: function(data){                
-        
+        console.log(data);
     },
     error: function(){
         console.log("Errouu!")
     }
   });
-     
+
+  $.ajax({
+    url: "index.php?route=list",   
+    type: "GET",
+    dataType: 'json',
+    success: function(data){                
+        console.log(data);
+    },
+    error: function(){
+        console.log("Errouu!")
+    }
+  });
+*/   
 
 </script>
 </html>

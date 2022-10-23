@@ -1,0 +1,7 @@
+- Aprimorei o visual dos cards com bootstrap, aumentei o tamanho dos cards oque permite exibir mais dados do asterisk.
+
+- A tela permite a inserção de fotos. (não tive tempo para criar algo para colocar fotos próprias)
+
+- Organizei o codigo o maximo possivel em mvc sem utilizar framework.
+
+- Utilizei rotas para chamar os metodos oque melhora a manutenção do codigo.
